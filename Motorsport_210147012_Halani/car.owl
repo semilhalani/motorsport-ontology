@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/samael/ontologies/2022/4/untitled-ontology-25#"
+     xml:base="http://www.semanticweb.org/samael/ontologies/2022/4/untitled-ontology-25"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasCategory">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isCategoryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasEvents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasEvents">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isEventsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasGenre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isGenreOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasIndustry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasIndustry">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isIndustryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasKnownFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasKnownFor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isKnownFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasOccupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasOccupation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isOccupationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasPurpose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasPurpose">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isPurposeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasService">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isServiceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasUnion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#hasUnion">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isUnionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Union"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isCategoryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isCategoryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isEventsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isEventsOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Events"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isGenreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isGenreOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isIndustryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isIndustryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Industry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isKnownFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isKnownFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#KnownFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isOccupationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isOccupationOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Occupation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isPurposeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isPurposeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Purpose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isServiceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isServiceOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#isUnionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#isUnionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#first -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#first">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#firstlabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#firstlabel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#olympic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#olympic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#region">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Category">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Events">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Industry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#KnownFor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#KnownFor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Occupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Occupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Purpose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Purpose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samael/ontologies/2022/4/Car#Union -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Union">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samael/ontologies/2022/4/Car#Motorsport"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
