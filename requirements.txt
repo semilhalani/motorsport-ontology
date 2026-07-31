@@ -1,0 +1,8 @@
+# requirements.txt
+# Motorsport Ontology & Semantic Web Querying
+#
+# Core dependencies for building/parsing the OWL ontology and running
+# SPARQL queries against it and against external endpoints (DBpedia).
+
+rdflib          # RDF graph handling, OWL parsing/serialization, SPARQL query execution
+SPARQLWrapper   # Python client for querying remote SPARQL endpoints (e.g. DBpedia)
