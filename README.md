@@ -4,17 +4,17 @@ A semantic web project building an OWL ontology for the motorsport domain and qu
 
 ## Summary
 
-This project defines an OWL ontology modeling entities and relationships in motorsport (e.g. drivers, teams, races) using Protégé (version 5.5.0), then queries it — and federates queries against external linked-data sources like DBpedia — using SPARQL via Python.
+This project defines an OWL ontology modeling entities and relationships in motorsport (drivers, teams, races, etc.) using Protégé, version 5.5.0. It then queries the ontology and federates queries against external linked-data sources like DBpedia, using SPARQL via Python.
 
-**Honest framing:** the query scripts build on lab-provided starter/template code for connecting to and querying SPARQL endpoints. The original contribution is the motorsport ontology design itself (`car.owl` / `car_basic.owl`) and the specific queries built on top of the template to explore it.
+**Honest framing:** the query scripts build on lab-provided starter/template code for connecting to and querying SPARQL endpoints. The original contribution is the motorsport ontology design itself (`car.owl` / `car_basic.owl`), plus the specific queries built on top of the template to explore it.
 
 ## Tech stack
 
 - Python
-- `rdflib` / `SPARQLWrapper` (RDF handling + SPARQL queries)
-- OWL (Web Ontology Language) — ontology definition
-- Protégé (ontology design/editing)
-- DBpedia (public linked-data SPARQL endpoint)
+- `rdflib` / `SPARQLWrapper` for RDF handling and SPARQL queries
+- OWL (Web Ontology Language) for ontology definition
+- Protégé for ontology design and editing
+- DBpedia as the public linked-data SPARQL endpoint
 
 ## What's in this repo
 
@@ -22,20 +22,22 @@ This project defines an OWL ontology modeling entities and relationships in moto
 |---|---|
 | `car.owl` / `car_basic.owl` | The motorsport ontology definitions |
 | `basic.py` / `bonus.py` | SPARQL query scripts against the ontology and external endpoints |
-| `query_basic.py` | Loads `car_basic.owl` into an RDFlib graph and runs a SPARQL SELECT that pulls distinct genre/service pairs for `Motorsport` individuals, grouped by genre, printing the results as a formatted table |
-| `car.properties` / `car_basic.properties` | Protégé-generated config (no credentials — blank templates) |
+| `query_basic.py` | Loads `car_basic.owl` into an RDFlib graph and runs a SPARQL SELECT that pulls distinct genre and service pairs for `Motorsport` individuals, grouped by genre, printing the results as a formatted table |
+| `car.properties` / `car_basic.properties` | Protégé-generated config. No credentials, just blank templates |
 
 ## How to explore
 
 ```bash
-git clone https://github.com/semilhalani/ontology-thesemanticweb.git
-cd ontology-thesemanticweb
+git clone https://github.com/semilhalani/motorsport-ontology.git
+cd motorsport-ontology
 pip install -r requirements.txt
 python basic.py
 ```
 
-To view/edit the ontology itself, open the `.owl` files in [Protégé](https://protege.stanford.edu/).
+To view or edit the ontology itself, open the `.owl` files in [Protégé](https://protege.stanford.edu/).
 
 ## Key technical decisions
 
-The ontology was structured as 10 classes (`Category`, `Events`, `Genre`, `Industry`, `KnownFor`, `Occupation`, `Purpose`, `Service`, `Union`, and the top-level `Motorsport`), all defined as subclasses of `Motorsport`, with 9 object properties (e.g. `isGenreOf`, `hasUnion`, `isServiceOf`) linking them and 5 data properties (`first`, `name`, `region`, `olympic`, `firstlabel`) capturing literal attributes. Object properties were individually characterized rather than left as generic links — for example, `isGenreOf` was asserted as asymmetric (a Motorsport instance can be a genre of something, but not vice versa) and set as the inverse of `hasGenre`, so the reasoner could infer the reverse relationship automatically instead of it being asserted twice.
+The ontology is structured as 10 classes: `Category`, `Events`, `Genre`, `Industry`, `KnownFor`, `Occupation`, `Purpose`, `Service`, `Union`, and the top-level `Motorsport`. All 9 are subclasses of `Motorsport`. There are 9 object properties (`isGenreOf`, `hasUnion`, `isServiceOf`, and others) linking these classes, and 5 data properties (`first`, `name`, `region`, `olympic`, `firstlabel`) capturing literal attributes.
+
+Object properties were individually characterized rather than left as generic links. For example, `isGenreOf` was asserted as asymmetric, since a Motorsport instance can be a genre of something but not the reverse. It was also set as the inverse of `hasGenre`, so the reasoner could infer the reverse relationship automatically instead of it being asserted twice.
